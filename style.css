@@ -64,8 +64,17 @@ button{
     background-color: rgb(19, 243, 19);
 }
 #clear{
-    background-color: rgb(250, 31, 31);
-    
+    background-color: rgb(250, 31, 31);  
+
+}
+#equal:hover{
+    transform: scale(1.1);  /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#clear:hover{
+    transform: scale(1.1);  /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 button:hover{
