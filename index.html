@@ -3,55 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div class="screen">
+            <div id="resultDisplay">0</div>
+        </div>    
 
+        <div class="btns">
+            <!-- Number Buttons -->
+            <div class="NumBtns">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">0</button>
+            </div>
 
-    <script>
-        var a=parseFloat(prompt('Enter 1st Number'));
-        var b=parseFloat(prompt('Enter 2nd Number'));
+            <!-- Operator Buttons -->
+            <div class="OpBtns">
+                <button class="op">+</button>
+                <button class="op">-</button>
+                <button class="op">*</button> <!-- Changed `x` to `*` -->
+                <button class="op">/</button>
+                <button id="clear">C</button> <!-- Clear button -->
+                <button id="equal">=</button> <!-- Equal button -->
+            </div>
+        </div>  
+    </div>
 
-        function add(a,b){
-            var sum=a+b;
-            console.log(sum);
-        }
-        function sub(a,b){
-            var sub=a-b;
-            console.log(sub);
-        }
-        function multi(a,b){
-            var multi=a*b;
-            console.log(multi);
-        }
-        function divide(a,b){
-            if (b === 0) {
-                console.log("Cannot divide by zero!");
-            } else {
-                var divide = a / b;
-                console.log("Quotient: " + divide);
-        }
-    }
-
-       function calculate(){
-        console.log("Enter your Choice");
-        var choice = prompt('Enter your choice for calculation');
-
-        switch (choice){
-
-            case '+':add(a,b);break;
-            case '-':sub(a,b);break;
-            case '*':multi(a,b);break;
-            case "/":divide(a,b);break; 
-            default: console.log("Wrong Choice");
-        }
-
-            add(a,b);
-        }
-
-        calculate();
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
