@@ -13,6 +13,7 @@ document.querySelectorAll('.btn').forEach(button => {
             operator = '';
             resultDisplayed = false;  
         }
+        
         if (operator === '') {
             a += this.innerHTML;
         } else {
